@@ -23,6 +23,21 @@ app.get("/planet/:planetId", (req, res) => {
   res.send(`Planet with id ${planetId} for client ${req.ip} not implemented yet`);
 });
 
+/*
+Method GET
+Response 200 OK
+URL http://localhost:3333/planet/:planetId"
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 60
+ETag: W/"3c-lojD4/QDyaRXalMIS63bxd41Iuo"
+Date: Thu, 15 Jul 2021 11:22:16 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+1 Planet with id :planetId" for client ::1 not implemented yet
+*/
+
 // GET sur '/hello/:name'
 app.get("/hello/:name", (req, res) => {
   const name = req.params.name;
@@ -47,18 +62,3 @@ Keep-Alive: timeout=5
 app.listen(PORT, IP_LOCAL, () => {
   console.log(`Example app listening at http://${IP_LOCAL}:${PORT}`);
 });
-
-/*
-Method GET
-Response 200 OK
-URL http://localhost:3333/planet/:planetId"
-X-Powered-By: Express
-Content-Type: text/html; charset=utf-8
-Content-Length: 60
-ETag: W/"3c-lojD4/QDyaRXalMIS63bxd41Iuo"
-Date: Thu, 15 Jul 2021 11:22:16 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-1 Planet with id :planetId" for client ::1 not implemented yet
-*/

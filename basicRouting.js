@@ -71,7 +71,7 @@ app.get(/a/, (req, res) => {
 app.get(/.*fly$/, (req, res) => {
   res.send("/.*fly$/");
 }); // http://192.168.1.10:3333/butterfly = Response = /.*fly$/
-// http://192.168.1.10:3333/dragonfly = Response = /a/ dragonfly ne fonctionne pas
+// http://192.168.1.10:3333/dragonfly = Response = /a/ dragonfly NE FONCTIONNE PAS
 
 // start the server
 app.listen(PORT, IP_LOCAL, () => {
